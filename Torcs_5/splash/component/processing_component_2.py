@@ -35,6 +35,10 @@ class ProcessingComponent2(Component, metaclass=Singleton):
         new_msg = Float32()
         new_msg.data = kp*error + ki*(self.prev_error + error*self.dt) + kd*(error/self.dt)
         self.write("sink_al_x", new_msg)
+
+
+
+        #tlqkf
         
     
     
